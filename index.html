@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
 <title>Raja Udaya Venkata Bhaskar ♡ Pujitha — Wedding Invitation</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -162,54 +163,57 @@
     justify-content: center;
     padding: 80px 24px;
     background: linear-gradient(160deg, #02051a 0%, #060d2e 40%, #080418 70%, #02051a 100%);
+
   }
   .hero-content { text-align: center; max-width: 800px; z-index: 2; }
   .hero-eyebrow { font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 0.35em; color: var(--gold); text-transform: uppercase; }
   .hero-names {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: clamp(1.8rem, 6.5vw, 3.2rem);
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    line-height: 1.2;
-  }
-  .hero-names .groom,
-  .hero-names .bride {
-    display: block;
-    background: linear-gradient(180deg, #ffffff 0%, #dce9ff 25%, #7b9fff 55%, #c8d8ff 80%, #ffffff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    filter: drop-shadow(0 0 18px rgba(120,160,255,0.65)) drop-shadow(0 0 40px rgba(100,140,255,0.3));
-    text-align: center;
-  }
-  .hero-names em {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.45em;
-    letter-spacing: 0.2em;
-    -webkit-text-fill-color: #a8c4ff;
-    color: #a8c4ff;
-    opacity: 0.85;
-    margin: 10px 0;
-    filter: none;
-  }
-  .hero-names em::before,
-  .hero-names em::after {
-    content: '';
-    flex: 1;
-    max-width: 80px;
-    height: 0.5px;
-    background: linear-gradient(90deg, transparent, #7b9fff);
-  }
-  .hero-names em::after {
-    background: linear-gradient(90deg, #7b9fff, transparent);
-  }
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: clamp(1.8rem, 6.5vw, 3.2rem);
+  font-weight: 700;        /* changed from 100 to 700 */
+  letter-spacing: 0.18em;  /* slightly tighter for bold */
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.hero-names .groom,
+.hero-names .bride {
+  display: block;
+  background: linear-gradient(180deg,
+    #ffffff 0%, #dce9ff 25%, #7b9fff 55%, #c8d8ff 80%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(120,160,255,0.65))
+          drop-shadow(0 0 40px rgba(100,140,255,0.3));
+  text-align: center;
+}
+.hero-names em {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.45em;
+  letter-spacing: 0.2em;
+  -webkit-text-fill-color: #a8c4ff;
+  color: #a8c4ff;
+  opacity: 0.85;
+  margin: 10px 0;
+  filter: none;
+}
+.hero-names em::before,
+.hero-names em::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 0.5px;
+  background: linear-gradient(90deg, transparent, #7b9fff);
+}
+.hero-names em::after {
+  background: linear-gradient(90deg, #7b9fff, transparent);
+}
   .cute-line { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: #fff0c0; margin-top: 20px; font-style: italic; text-shadow: 0 0 8px rgba(0,0,0,0.5); background: rgba(0,0,0,0.4); display: inline-block; padding: 8px 24px; border-radius: 60px; backdrop-filter: blur(6px); border: 1px solid rgba(245,200,66,0.4); }
 
   .countdown-wrap { display: flex; gap: clamp(12px, 4vw, 24px); justify-content: center; margin-top: 38px; flex-wrap: wrap; }
@@ -242,35 +246,17 @@
   .event-badge { font-size: 2.2rem; }
 
   .venue-inner { display: flex; flex-direction: column; gap: 28px; margin-top: 32px; }
-  .venue-card { background: rgba(15,5,32,0.8); backdrop-filter: blur(8px); border-radius: 32px; padding: 24px 28px; border: 1px solid rgba(245,200,66,0.5); box-shadow: 0 10px 25px -8px black; transition: 0.3s; }
+  .venue-card { background: rgba(15,5,32,0.8); backdrop-filter: blur(8px); border-radius: 32px; padding: 24px 28px; border: 1px solid rgba(245,200,66,0.5); box-shadow: 0 10px 25px -8px black; }
   .venue-card h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 10px; }
   .venue-card p { color: #f0e6d2; line-height: 1.5; text-shadow: 0 1px 1px rgba(0,0,0,0.3); }
   .map-link { color: var(--gold); text-decoration: none; font-size: 0.85rem; border-bottom: 1px dashed; display: inline-block; margin-top: 10px; }
-
-  /* VERTICAL VIDEO CONTAINER - PERFECT FOR MOBILE PORTRAIT VIDEOS */
-  .vertical-video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto;
-    width: 100%;
-  }
-  .vertical-video {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 75vh;
-    border-radius: 32px;
-    box-shadow: 0 25px 45px -12px black;
-    border: 2px solid rgba(245,200,66,0.4);
-    object-fit: contain;
-    background: #00000022;
-  }
 
   .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; margin-top: 44px; }
   .gallery-item { border-radius: 28px; overflow: hidden; aspect-ratio: 4/5; background: rgba(255,255,255,0.05); box-shadow: 0 20px 30px -12px black; }
   .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
   .gallery-item:hover img { transform: scale(1.05); }
+  .video-wrap { margin-top: 32px; border-radius: 32px; overflow: hidden; box-shadow: 0 25px 35px -12px black; }
+  video { width: 100%; display: block; border-radius: 28px; }
 
   .invited-by { background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(30,20,50,0.7)); backdrop-filter: blur(10px); border-radius: 36px; padding: 32px 28px; margin-top: 30px; text-align: center; border: 1px solid rgba(245,200,66,0.5); }
   .invited-by h3 { font-family: 'Cinzel', serif; color: #ffdf99; font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px; text-shadow: 0 0 8px rgba(245,200,66,0.6); }
@@ -304,7 +290,6 @@
     .event-num { width: auto; }
     .family-names { gap: 25px; }
     .contact-numbers { gap: 18px; }
-    .vertical-video { max-height: 60vh; }
   }
 </style>
 </head>
@@ -323,9 +308,9 @@
 
 <!-- MAIN WEDDING WEBSITE -->
 <div id="mainContent" class="main-wedding-content">
-  <!-- background music from your repo -->
+  <!-- YOUR GITHUB MUSIC - DIRECT RAW URL -->
   <audio id="bgMusic" loop preload="auto" crossorigin="anonymous">
-    <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/Wedding%20card%20video%20-%20invitation%20card%20video%20-%20pelli%20subhalekha%20video%20invitation%20%23weddinginvites.mp3" type="audio/mpeg">
+    <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/Wedding%20card%20video%20-%20invitation%20card%20video%20-%20pelli%20subhalekha%20video%20invitation%20%23weddinginvites.mp3">
   </audio>
 
   <section class="hero">
@@ -354,9 +339,9 @@
     <h2 class="section-heading">Moments We Cherish</h2>
     <div class="ornament"><div class="ornament-diamond"></div></div>
     <div class="gallery-grid">
-      <div class="gallery-item"><img id="img1" alt="memory" src="https://via.placeholder.com/600x800?text=Memory+1"></div>
-      <div class="gallery-item"><img id="img2" alt="memory" src="https://via.placeholder.com/600x800?text=Memory+2"></div>
-      <div class="gallery-item"><img id="img3" alt="memory" src="https://via.placeholder.com/600x800?text=Memory+3"></div>
+      <div class="gallery-item"><img id="img1" alt="memory" src="./DSC03985.JPG"></div>
+      <div class="gallery-item"><img id="img2" alt="memory" src="./DSC04072.JPG"></div>
+      <div class="gallery-item"><img id="img3" alt="memory" src="./DSC04072.JPG"></div>
     </div>
   </div>
 
@@ -365,17 +350,13 @@
       <p class="section-title">Our Story</p>
       <h2 class="section-heading">A Love Worth Celebrating</h2>
       <div class="ornament"><div class="ornament-diamond"></div></div>
-      <!-- VERTICAL VIDEO HERE - optimized for portrait videos -->
-      <div class="vertical-video-container">
-        <video class="vertical-video" controls autoplay loop muted playsinline>
-          <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/vn20260427-141831_61e7lpxc.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="video-wrap">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1187629210?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PHOTO'S"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
       </div>
     </div>
   </div>
 
-  <!-- EVENTS SECTION (only Haldi and Wedding - removed Reception) -->
+  <!-- EVENTS SECTION -->
   <div class="section reveal">
     <p class="section-title">Schedule</p>
     <h2 class="section-heading">Wedding Celebrations</h2>
@@ -383,7 +364,7 @@
     <div class="events-list" id="eventsContainer"></div>
   </div>
 
-  <!-- VENUES (only Haldi and Wedding venues) -->
+  <!-- VENUES -->
   <div class="section reveal">
     <p class="section-title">Venues</p>
     <h2 class="section-heading">Where To Find Us</h2>
@@ -396,7 +377,7 @@
     <div class="invited-by">
       <h3>✨ Invited by ✨</h3>
       <div class="family-names">
-        <div class="family-member"><div class="role">Father</div><div class="name">Nemala Satya</div></div>
+        <div class="family-member"><div class="role">Father</div><div class="name">Nemala Satyanarayana</div></div>
         <div class="family-member"><div class="role">Mother</div><div class="name">Nemala Rama Sri</div></div>
         <div class="family-member"><div class="role">Brother</div><div class="name">Nemala Vijaya Bhaskar</div></div>
       </div>
@@ -426,34 +407,24 @@
 </div>
 
 <script>
-  // ========== WEDDING DATA ==========
-  // Events: Haldi (4th May 2026) and Wedding (6th May 2026 10:35 PM)
+  // ========== DATA ==========
   const weddingData = {
     events: [
-      { name: "🌼 Haldi Ceremony", dateTime: "4th May 2026 (Sunday) at Morning", emoji: "🌼✨" },
-      { name: "💍 Wedding Ceremony", dateTime: "6th May 2026 (Wednesday) Night at 10:35 PM", emoji: "💍🌙" }
+      { name: "🌼 Haldi Ceremony", dateTime: "10-May-2026 (Sunday) at 8 AM", emoji: "🌼✨" },
+      { name: "💍 Wedding Ceremony", dateTime: "11-May-2026 (Monday) at 10 AM", emoji: "💍" },
+      { name: "🥂 Reception", dateTime: "12-May-2026 (Tuesday) at 7 PM", emoji: "🥂🎉" }
     ],
     venues: [
-      { 
-        name: "🌼 Haldi Venue", 
-        desc: "Haldi Ceremony", 
-        address: "SRI SURYA CONVENTION A/C KALYANAMANDAPAM, Mavayyagari Thota, Tangellamudi, Eluru",
-        mapsLink: "https://maps.app.goo.gl/tztgfYrPWw4fqUDaA?g_st=aw"
-      },
-      { 
-        name: "💍 Wedding Venue", 
-        desc: "Wedding Ceremony & Dinner", 
-        address: "SRI SURYA CONVENTION A/C KALYANAMANDAPAM, Mavayyagari Thota, Tangellamudi, Eluru",
-        mapsLink: "https://maps.app.goo.gl/AqunCk8yBMug2EuVA?g_st=aw"
-      }
+      { name: "YNNR Kalyana Mandapam", desc: "Haldi & Wedding Ceremony", address: "14th mile, Vunguturu road, Amaravathi mandal, Palnadu District", lat: 16.485312072343703, lng: 80.38964774432212 },
+      { name: "Reception Venue", desc: "Walima & Reception", address: "Lemalle village, Amaravathi mandal, Guntur District", lat: 16.491450220595766, lng: 80.3893242005544 }
     ]
   };
 
-  // Set dates for header/footer
-  const wDate = new Date(2026, 4, 6, 22, 35, 0); // 6th May 2026, 10:35 PM
+  // Set dates
+  const wDate = new Date(2026, 4, 11, 10, 0, 0);
   const dateStr = wDate.toLocaleDateString("en-US", { weekday:"long", year:"numeric", month:"long", day:"numeric" });
-  document.getElementById("heroDate").innerHTML = `Wednesday, 6th May 2026 · 10:35 PM`;
-  document.getElementById("footerDate").innerHTML = `Wednesday, 6th May 2026 · 10:35 PM`;
+  document.getElementById("heroDate").innerHTML = dateStr;
+  document.getElementById("footerDate").innerHTML = dateStr.toUpperCase();
 
   // Render Events
   const eventsContainer = document.getElementById("eventsContainer");
@@ -463,22 +434,24 @@
     eventsContainer.appendChild(div);
   });
 
-  // Render Venues with Google Maps links
+  // Render Venues with Google Maps
   const venuesContainer = document.getElementById("venuesContainer");
   weddingData.venues.forEach((venue) => {
+    const mapsEmbedUrl = `https://www.google.com/maps?q=${venue.lat},${venue.lng}&output=embed`;
     const card = document.createElement("div"); card.className = "venue-card reveal";
     card.innerHTML = `
       <h3>📍 ${venue.name}</h3>
       <p><strong>${venue.desc}</strong></p>
       <p>${venue.address}</p>
-      <a href="${venue.mapsLink}" target="_blank" class="map-link">🗺️ Get Directions on Google Maps →</a>
+      <iframe width="100%" height="200" style="border-radius:20px; margin-top:12px; border:1px solid #f5c84266;" frameborder="0" src="${mapsEmbedUrl}" allowfullscreen></iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${venue.lat},${venue.lng}" target="_blank" class="map-link">🗺️ Get Directions →</a>
     `;
     venuesContainer.appendChild(card);
   });
 
-  // Countdown to 6th May 2026, 22:35
+  // Countdown
   function updateCountdown() {
-    const target = new Date(2026, 4, 6, 22, 35, 0).getTime();
+    const target = new Date(2026, 4, 11, 10, 0, 0).getTime();
     const diff = target - Date.now();
     if (diff < 0) { document.getElementById("countdownArea").innerHTML = '<div style="color:var(--gold-light);">✨ Celebration ongoing ✨</div>'; return; }
     document.getElementById("days").innerText = String(Math.floor(diff / 864e5)).padStart(2,'0');
@@ -488,7 +461,7 @@
   }
   setInterval(updateCountdown, 1000); updateCountdown();
 
-  // ========== RINGS COLLISION ANIMATION ==========
+  // ========== RINGS COLLISION ==========
   const splashDiv = document.getElementById("ringsSplash");
   const ringLeft = document.getElementById("ringLeft"), ringRight = document.getElementById("ringRight");
   const sparkDiv = document.getElementById("sparkEffect");
@@ -545,3 +518,70 @@
   function revealWebsite() {
     mainContent.classList.add("visible-main");
     splashDiv.style.transition = "opacity 0.9s";
+    splashDiv.style.opacity = "0";
+    setTimeout(() => { splashDiv.style.display = "none"; }, 900);
+    
+    // Play music from GitHub
+    bgMusic.play().then(() => {
+      musicPlaying = true;
+      musicControl.innerHTML = "♫ Pause Music";
+    }).catch((e) => {
+      console.log("Auto-play prevented:", e);
+      musicControl.innerHTML = "♩ Play Music";
+    });
+    
+    setTimeout(() => {
+      document.querySelectorAll(".main-wedding-content .reveal").forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 80) el.classList.add("visible");
+      });
+      addPetals();
+    }, 200);
+  }
+  
+  inviteBtn.addEventListener("click", (e) => { e.preventDefault(); revealWebsite(); });
+  
+  musicControl.addEventListener("click", () => {
+    if (musicPlaying) { bgMusic.pause(); musicControl.innerHTML = "♩ Play Music"; }
+    else { bgMusic.play().catch(e=>console.log); musicControl.innerHTML = "♫ Pause Music"; }
+    musicPlaying = !musicPlaying;
+  });
+  
+  // ========== WHATSAPP SHARE ==========
+  const shareBtn = document.getElementById("whatsappShareBtn");
+  const shareMessage = `🎉 *Wedding Invitation* 🎉\n\nYou're invited to the wedding of *Shaik Mustafa* & *Shaik Salma* on *Monday, 11th May 2026*.\n\n📍 Venues:\n• Haldi & Wedding: YNNR Kalyana Mandapam, Amaravathi\n• Reception: Lemalle village, Guntur\n\nJoin us to celebrate love! 💕\n\nRSVP: 6302708295 / 8790330479`;
+  shareBtn.addEventListener("click", () => {
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareMessage)}`, '_blank');
+  });
+  
+  // Observer for reveals
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("visible"); }); }, { threshold: 0.15 });
+  const mainObserver = new MutationObserver(() => {
+    if (mainContent.classList.contains("visible-main")) {
+      document.querySelectorAll(".main-wedding-content .reveal").forEach(el => observer.observe(el));
+      mainObserver.disconnect();
+    }
+  });
+  mainObserver.observe(mainContent, { attributes: true, attributeFilter: ["class"] });
+  
+  function addPetals() {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+    hero.style.position = "relative"; hero.style.overflow = "hidden";
+    for (let i=0;i<22;i++) {
+      let p = document.createElement("div");
+      p.classList.add("petal");
+      p.style.width = `${5+Math.random()*10}px`; p.style.height = `${8+Math.random()*14}px`;
+      p.style.background = `radial-gradient(ellipse, rgba(168,85,247,0.6), rgba(245,200,66,0.3))`;
+      p.style.borderRadius = "50% 0 50% 0";
+      p.style.left = `${Math.random()*100}%`; p.style.top = `${Math.random()*100}%`;
+      p.style.animation = `floatPetal ${6+Math.random()*12}s linear infinite`;
+      p.style.animationDelay = `${Math.random()*9}s`;
+      hero.appendChild(p);
+    }
+  }
+  
+  bgMusic.load();
+  window.addEventListener("resize", () => { if (splashDiv.style.display !== "none") startRings(); });
+</script>
+</body>
+</html>
