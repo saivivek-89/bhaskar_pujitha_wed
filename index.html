@@ -310,7 +310,7 @@
 <div id="mainContent" class="main-wedding-content">
   <!-- YOUR GITHUB MUSIC - DIRECT RAW URL -->
   <audio id="bgMusic" loop preload="auto" crossorigin="anonymous">
-    <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/Wedding%20card%20video%20-%20invitation%20card%20video%20-%20pelli%20subhalekha%20video%20invitation%20%23weddinginvites.mp3">
+    <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/Wedding%20card%20video%20-%20invitation%20card%20video%20-%20pelli%20subhalekha%20video%20invitation%20%23weddinginvites.mp3" type="audio/mpeg">
   </audio>
 
   <section class="hero">
@@ -341,7 +341,7 @@
     <div class="gallery-grid">
       <div class="gallery-item"><img id="img1" alt="memory" src="./DSC03985.JPG"></div>
       <div class="gallery-item"><img id="img2" alt="memory" src="./DSC04072.JPG"></div>
-      <div class="gallery-item"><img id="img3" alt="memory" src="./DSC04072.JPG"></div>
+      <div class="gallery-item"><img id="img3" alt="memory" src="./DSC04287.JPG"></div>
     </div>
   </div>
 
@@ -351,10 +351,12 @@
       <h2 class="section-heading">A Love Worth Celebrating</h2>
       <div class="ornament"><div class="ornament-diamond"></div></div>
       <div class="video-wrap">
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1187629210?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PHOTO'S"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <video controls autoplay loop muted playsinline style="width:100%; max-height:70vh; border-radius:28px;">
+          <source src="https://github.com/saivivek-89/bhaskar_poojitha_wed/raw/refs/heads/main/vn20260427-141831_61e7lpxc.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
-  </div>
+</div>
 
   <!-- EVENTS SECTION -->
   <div class="section reveal">
@@ -410,20 +412,18 @@
   // ========== DATA ==========
   const weddingData = {
     events: [
-      { name: "🌼 Haldi Ceremony", dateTime: "10-May-2026 (Sunday) at 8 AM", emoji: "🌼✨" },
-      { name: "💍 Wedding Ceremony", dateTime: "11-May-2026 (Monday) at 10 AM", emoji: "💍" },
-      { name: "🥂 Reception", dateTime: "12-May-2026 (Tuesday) at 7 PM", emoji: "🥂🎉" }
+      { name: "🌼 Haldi Ceremony", dateTime: "4th May 2026 (Sunday) at Morning", emoji: "🌼✨" },
+      { name: "💍 Wedding Ceremony", dateTime: "6th May 2026 (Wednesday) Night at 10:35 PM", emoji: "💍🌙" }
     ],
     venues: [
-      { name: "YNNR Kalyana Mandapam", desc: "Haldi & Wedding Ceremony", address: "14th mile, Vunguturu road, Amaravathi mandal, Palnadu District", lat: 16.485312072343703, lng: 80.38964774432212 },
-      { name: "Reception Venue", desc: "Walima & Reception", address: "Lemalle village, Amaravathi mandal, Guntur District", lat: 16.491450220595766, lng: 80.3893242005544 }
+      { name: "📍 SRI SURYA CONVENTION A/C KALYANAMANDAPAM", desc: "Haldi & Wedding Ceremony", address: "Mavayyagari Thota, Tangellamudi, Eluru", lat: 16.711, lng: 81.103 }
     ]
   };
 
   // Set dates
   const wDate = new Date(2026, 4, 11, 10, 0, 0);
   const dateStr = wDate.toLocaleDateString("en-US", { weekday:"long", year:"numeric", month:"long", day:"numeric" });
-  document.getElementById("heroDate").innerHTML = dateStr;
+  document.getElementById("heroDate").innerHTML = "Wednesday, 6th May 2026 · Night 10:35 PM";
   document.getElementById("footerDate").innerHTML = dateStr.toUpperCase();
 
   // Render Events
@@ -451,7 +451,7 @@
 
   // Countdown
   function updateCountdown() {
-    const target = new Date(2026, 4, 11, 10, 0, 0).getTime();
+    const target = new Date(2026, 4, 6, 22, 35, 0).getTime();
     const diff = target - Date.now();
     if (diff < 0) { document.getElementById("countdownArea").innerHTML = '<div style="color:var(--gold-light);">✨ Celebration ongoing ✨</div>'; return; }
     document.getElementById("days").innerText = String(Math.floor(diff / 864e5)).padStart(2,'0');
@@ -548,7 +548,7 @@
   
   // ========== WHATSAPP SHARE ==========
   const shareBtn = document.getElementById("whatsappShareBtn");
-  const shareMessage = `🎉 *Wedding Invitation* 🎉\n\nYou're invited to the wedding of *Shaik Mustafa* & *Shaik Salma* on *Monday, 11th May 2026*.\n\n📍 Venues:\n• Haldi & Wedding: YNNR Kalyana Mandapam, Amaravathi\n• Reception: Lemalle village, Guntur\n\nJoin us to celebrate love! 💕\n\nRSVP: 6302708295 / 8790330479`;
+  const shareMessage = `🎉 *Wedding Invitation* 🎉\n\nYou're invited to the wedding of *Raja Udaya Venkata Bhaskar* & *Pujitha* on *Wednesday, 6th May 2026 at 10:35 PM*.\n\n📍 Venue: SRI SURYA CONVENTION A/C KALYANAMANDAPAM, Mavayyagari Thota, Tangellamudi, Eluru\n\nJoin us to celebrate love! 💕\n\nRSVP: 9490514055 / 9490514054`;
   shareBtn.addEventListener("click", () => {
     window.open(`https://wa.me/?text=${encodeURIComponent(shareMessage)}`, '_blank');
   });
